@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Occasio">
+  <!--
+    Occasio mark: a key inside a rounded square, in brand green #0F6E56.
+
+    Rebuilt from the supplied artwork rather than scaled from it, so the mark
+    stays sharp at every size and the file stays small enough to inline. The
+    shaft and both teeth all start at the shaft's left edge and overlap, so
+    the lower block reads as one rounded form instead of two pills meeting at
+    a notch.
+  -->
+  <rect width="512" height="512" rx="110" fill="#0F6E56"/>
+  <g fill="#fff">
+    <rect x="238.2" y="280" width="35.4" height="143" rx="17.7"/>
+    <rect x="238.2" y="348.5" width="78.05" height="31.75" rx="15.875"/>
+    <rect x="238.2" y="391.2" width="56.8" height="31.8" rx="15.9"/>
+    <circle cx="255.9" cy="199.4" r="99.6" fill="none" stroke="#fff" stroke-width="39"/>
+    <circle cx="255.9" cy="199.4" r="35.4"/>
+  </g>
+</svg>
