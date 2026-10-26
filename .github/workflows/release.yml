@@ -38,7 +38,7 @@ jobs:
           echo "$KEYSTORE_BASE64" | base64 --decode > android/app/release.jks
           printf 'storeFile=release.jks\nstorePassword=%s\nkeyAlias=%s\nkeyPassword=%s\n' "$STORE_PASSWORD" "$KEY_ALIAS" "$KEY_PASSWORD" > android/key.properties
       - run: flutter build appbundle --release --dart-define=APP_ENV=production --dart-define=API_BASE_URL=https://myoccasio.ca
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: android-release
           path: build/app/outputs/bundle/release/app-release.aab
@@ -55,7 +55,7 @@ jobs:
       - run: flutter pub get
       - run: flutter build ios --release --no-codesign --dart-define=APP_ENV=production --dart-define=API_BASE_URL=https://myoccasio.ca
       - run: ditto -c -k --sequesterRsrc --keepParent build/ios/iphoneos/Runner.app myoccasio-ios-unsigned.zip
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: ios-release-unsigned
           path: myoccasio-ios-unsigned.zip
